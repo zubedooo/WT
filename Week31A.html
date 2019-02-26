@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>week31A</title>
+<script type="text/javascript">
+function mixUp(a,b)
+{
+var aa=a.slice(0,2)+b.slice(2);
+var bb=b.slice(0,2)+a.slice(2);
+return aa+" "+bb;
+}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+var a=prompt("enter the first String");
+var b=prompt("enter the second String");
+var c=mixUp(a,b);
+document.writeln("<h1>"+c+"</h1>");
+</script>
+</body>
+</html>
