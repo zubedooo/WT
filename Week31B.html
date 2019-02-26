@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>week31A</title>
+<script type="text/javascript">
+function verbing(a)
+{
+if(a.length>=3){
+
+if(a.slice(-3)!="ing")
+return a+"ing";
+return a+"ly";
+}
+return a;
+
+}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+var a=prompt("enter the String");
+var c=verbing(a);
+document.writeln("<h1>"+c+"</h1>");
+</script>
+</body>
+</html>
