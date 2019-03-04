@@ -1,35 +1,40 @@
 <html>
 <head>
 <title>
-week 3 2 A
+week 3 2 B
 </title>
 <script type="text/javascript">
-
 </script>
 </head>
 
 <body>
 <script type="text/javascript">
-
 var a={
-color:["blue","red","white","black"],president:["modi","vajipayee"]
+color:["blue","red","white","black","green","violet","yellow"],president:["modi","vajipayee"]
 }
+
+
 var st=prompt("enter the choice");
 if(st=='color')
 s1=a.color;
 else if(st=='president')
 s1=a.president;
-l1=s1.length;
-var kk,k1;
-for(var i=0;i<l1;i++)
+
+var suffix;
+for(var i=0;i<s1.length;i++)
 {
-k1=s1[i];
-console.log("my #"+(i+1)+" choice is:"+k1);
-document.writeln(""my #"+(i+1)+" choice is:"+k1);
+
+ if(i+1==1 || i+1 ==21)
+     suffix="st";
+ else if(i+1==2)
+     suffix="nd";
+ else if(i+1==3)
+     suffix="rd";
+ else if(i+1>=4 && i+1<=20)
+     suffix="th"
+   
+document.writeln("<br>my "+(i+1)+suffix+" choice is:"+s1[i]);
 }
-
-
 </script>
 </body>
-
 </html>
