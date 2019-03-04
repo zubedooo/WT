@@ -1,0 +1,22 @@
+<html>
+<title> Enter two numbers to find the priority </title>
+<head>
+Enter 2 numbers :
+</head>
+<script type: "text/javascript" >
+var num1="GLOBAL"
+document.writeln("Variable name : num1 , value : "+num1);
+function getval()
+{
+var num1="LOCAL"
+alert("\n\nVariable name : num1 , value : "+num1);
+}
+document.writeln(" \nlocal vs global priority");
+ 
+</script>
+<body>
+<form>
+<input type="button" onclick="getval()" value="Click me" />
+</form>
+<br><br>END OF PROGRAM</br></br>
+</html>
