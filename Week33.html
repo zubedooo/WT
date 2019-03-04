@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>week3-4</title>
+<script type="text/javascript">
+function validate()
+{
+var name=document.getElementById("name");
+var uname=document.getElementById("uname");
+var pass=document.getElementById("pass");
+var conf=document.getElementById("conf");
+var dob=document.getElementById("dob").value;
+var email=document.getElementById("email");
+var sp=dob.split("-");
+var year=parseInt(sp[2]);
+if((uname.value="")||(pass.value=="")||(conf.value=="")||(email.value==""))
+{
+alert("fill in the Compulsary fields");
+}
+if(pass.value!=conf.value)
+{
+alert("passwords not matching");
+}
+if(email.value.slice(-10)!="@gmail.com")
+{
+alert("enter valid email address");
+}
+if(!(year>1900&&year<2000))
+{
+alert("enter the correct year of birth");
+}
+
+}
+</script>
+</head>
+<body>
+<form>
+Name:<input type="text" id="name"><br>
+Username:<input type="text" id="uname"><br>
+Pasword:<input type="password" id="pass"><br>
+Confirm Password:<input type="password" id="conf"><br>
+Date Of Birth:<input type="text" id="dob">dd-mm-yyyy<br>
+E-mail: <input type="text" id="email"><br>
+<input type="button" value="register" onclick="validate()"><br>
+</form>
+</body>
+</html>
