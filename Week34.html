@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+ function show()
+{
+ var name=document.getElementById('pname').value;
+ var age=parseInt(document.getElementById('age').value);
+ var dob=2019-age;
+ var hometown=document.getElementById('hometown').value;
+ document.write("username:"+name+"<br>");
+
+ document.write("dob:"+dob+"<br>");
+ document.write("<a href=\"https://www.google.com/search?q="+hometown+"\">hometown</a><br>");
+ document.write("<a href=\"https://www.google.com/maps?q="+hometown+"\">link to your hometown </a><br>");
+ return false;
+}
+</script>
+</head>
+<body>
+<form>
+Enter Name:<input type="text"  id="pname"/><br><br>
+Enter age:<input type="text" id="age"/><br><br>
+Enter Hometown:<input type="text" id="hometown"/><br><br>
+<input type="submit" onclick="return show()" value="click"/>
+</form>
+</body>
+</html>
