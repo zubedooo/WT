@@ -6,9 +6,14 @@ Enter 2 numbers :
 <script type: "text/javascript" >
 num1=window.prompt("Enter number 1 : ");
 num2=window.prompt("Enter number 2 : ");
+if(num1==num2)
+{
+document.writeln("Numbers are equal, square of them is: "+num1*num2);
+}
+else{
 document.writeln("Numbers entered : \n"+num1+","+num2+"\n\n");
 document.writeln("\n\nSmaller number is : " + (num1<num2?num1:num2) );
-
+}
 </script>
 <body>
 <br><br>End of program</br></br>
