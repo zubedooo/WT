@@ -2,25 +2,29 @@
 <head>
 <script>
 function security() {
-var question = "What is your favourite animal?";
-function inner() {
-return "Security Question: " + question + "<br>";
+    var question = "What is your favourite food?";
+    
+    function inner() {
+        return "Security Question: " + question + "<br>";
+    }
+    return inner();
 }
-return inner();
-}
+
 function validate() {
-var pwd = document.getElementById("pwd").value;
-if(pwd.valueOf() == "myPassword".valueOf())
-document.write("<h1>Welcome back!</h1>");
-else
-document.write("<h1>Password Incorrect</h1>" + security());
+    var pwd = document.getElementById("pwd").value;
+    if(pwd.valueOf() == "myPassword".valueOf())
+        document.write("<h1>Password Correct! Welcome</h1>");
+    else
+        document.write("<h1>Password Incorrect</h1>" + security());
 }
 </script> 
 <body>
+
 <h1>JavaScript</h1>
 <form>
 Enter Password: <input type="password" id="pwd"><br>
 <input type="button" value="Submit" onclick="validate()">
 </form>
+
 </body>
 </html>
