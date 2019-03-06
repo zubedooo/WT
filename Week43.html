@@ -1,12 +1,18 @@
 <html>
-<title> Enter a week number to get the day </title>
 <head>
+<title> Enter a week number to get the day </title>
 </head>
 <script type: "text/javascript" >
+function num(){
 var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-num1=window.prompt("Enter a number of the week");
-document.writeln("Week day corresponding to day number "+num1+" is : "+day[num1-1]);
-
+num1=window.prompt("Enter a number of the day of the week");
+	function dayconv(){
+	document.writeln("Week day corresponding to day number "+num1+" is : "+day[num1-1]);
+	}
+return dayconv;
+}
+var func = num();
+func();
 </script>
 <body>
 </body>
