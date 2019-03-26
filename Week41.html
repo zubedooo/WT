@@ -1,22 +1,26 @@
+<!DOCTYPE HTML>
 <html>
-<title> Enter two numbers to find the smallest of the two </title>
-<head>
-Enter 2 numbers :
-</head>
-<script type: "text/javascript" >
-num1=window.prompt("Enter number 1 : ");
-num2=window.prompt("Enter number 2 : ");
-function smaller() {
-	document.writeln("Numbers entered : \n"+num1+","+num2+"<br/><br/>");
-	if(parseInt(num1)!=parseInt(num2)) {
-	document.writeln("\n\nSmaller number is : " + (parseInt(num1)<parseInt(num2)?num1:num2) ); }
-	else {
-		document.writeln("Numbers are equal, square is "+parseInt(num1)*parseInt(num1));
-	}
-}
-smaller();
-</script>
 <body>
-<br><br>End of program</br></br>
+	<script>
+		var a = prompt("Enter 1st number");
+		var b = prompt("Enter 2st number");		
+		function comp(){
+			var c;
+			a = parseInt(a);
+			b = parseInt(b);
+			if(a==b)
+				c = a*a;
+			else{
+				if(a<b) c = a;
+				else c = b;
+			}
+			document.write(c);
+		}
+		
+		comp();
+	</script>
 </body>
 </html>
+
+
+
