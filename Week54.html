@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 5</title>
+</head>
+<body>
+  <h2>Vehicle Prototype</h2>
+</body>
+
+<script type="text/javascript">
+
+function vehicle(a,b,c){
+  this.name = a;
+  this.year = b;
+  this.vin = c;
+}
+
+vehicle.prototype.details = function(){
+  console.log(this.name);
+  console.log(this.year);
+  console.log(this.vin);
+}
+
+vehicle.prototype.comment = function(){
+  console.log('Fields:');
+  console.log(this.valueOf());
+  console.log('Methods ');
+  console.log(this.__proto__);
+
+}
+
+var obj = new vehicle('BMW','2010','123456');
+
+obj.comment();
+
+</script>
+
+</html>
+
+
