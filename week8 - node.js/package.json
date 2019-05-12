@@ -1,0 +1,16 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "basics of node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/rushikc/kannada.git"
+},
+  "author": "Rushi",
+  "license": "ISC"
+}
